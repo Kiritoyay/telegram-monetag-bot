@@ -12,9 +12,6 @@ playBtn.onclick = () => {
     if (energia >= 100) {
         energia -= 100;
         atualizarEnergia();
-        alert("🌱 Você gastou 100 de energia!");
-    } else {
-        alert("⚠️ Energia insuficiente! Assista a um anúncio.");
     }
 };
 
@@ -29,10 +26,8 @@ adBtn.onclick = async () => {
         }
 
         atualizarEnergia();
-
-        alert("✅ Você ganhou +10 de energia!");
     } catch (e) {
-        alert("❌ O anúncio não foi concluído.");
+        // Nenhuma mensagem será exibida se o anúncio for fechado.
     }
 };
 
